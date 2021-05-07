@@ -36,3 +36,87 @@
     transform: rotate(360deg);
   }
 }
+
+.background{
+  background-image:url("https://images.hdqwalls.com/download/bloodshot-movie-5k-2020-b3-2048x1152.jpg");
+  width: 100%;
+  height: 90vh; 
+background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.boutton:hover{
+  color: #FFC42E;
+  background-color:rgb(255, 255, 255);
+  border:solid gold;
+  border-radius: 15px;
+
+}
+/*star*/
+.star{
+  width: 25px;
+}
+/*Navbar*/
+.logo{
+  margin-left: 3rem;
+}
+.caro{ 
+  margin-top: 5.9rem;
+}
+.navbar-light{
+  background: #b4a445;
+  background: linear-gradient(90deg, #e2d8aa 0%, #f3dcdc 100%);
+}
+.navlink{
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding-right: 1.4rem;
+  text-decoration: none!important; 
+  color:black !important;
+}
+body {
+  background: rgb(204, 49, 49);
+}
+/*input border radius*/
+.put{
+  border-radius: 50px;
+  outline: none;
+}
+/*nav bar links animation*/
+
+.navlink {
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #031D44;
+  padding: 20px 0px;
+  margin: 0px 20px;
+  display: inline-block;
+  position: relative;
+  opacity: 0.75;
+}
+
+.navlink:hover {
+  opacity: 1;
+
+}
+
+.navlink::before {
+  transition: 400ms;
+  height: 5px;
+  content: "";
+  position: absolute;
+  background-color: #c77f7f;
+}
+
+.nav-link-ltr::before {
+  width: 0%;
+  bottom: 10px;
+}
+
+.nav-link-ltr:hover::before {
+  width: 100%;
+}
+/* finish nav bar links animation*/
