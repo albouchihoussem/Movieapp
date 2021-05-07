@@ -37,15 +37,6 @@
   }
 }
 
-.background{
-  background-image:url("https://images.hdqwalls.com/download/bloodshot-movie-5k-2020-b3-2048x1152.jpg");
-  width: 100%;
-  height: 90vh; 
-background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 .boutton:hover{
   color: #FFC42E;
   background-color:rgb(255, 255, 255);
@@ -55,9 +46,27 @@ background-attachment: fixed;
 }
 /*star*/
 .star{
+  margin-left:1rem;
   width: 25px;
 }
 /*Navbar*/
+.fa-search {
+  margin-left:-30px;
+}
+.fa-heart{
+  color: black;
+  margin-left: 1rem;
+}
+.rounded-circle{
+  margin-left:-16px;
+
+}
+.titrelogo{
+font-size: 30px;
+font-weight:bold;
+margin-left: 1rem;
+color: #ffffff;
+}
 .logo{
   margin-left: 3rem;
 }
@@ -65,8 +74,8 @@ background-attachment: fixed;
   margin-top: 5.9rem;
 }
 .navbar-light{
-  background: #b4a445;
-  background: linear-gradient(90deg, #e2d8aa 0%, #f3dcdc 100%);
+  background: #ffe54f;
+  background: linear-gradient(90deg, #ddcc80 0%, #f3b8b8 100%);
 }
 .navlink{
   font-size: 1rem;
@@ -108,7 +117,7 @@ body {
   height: 5px;
   content: "";
   position: absolute;
-  background-color: #c77f7f;
+  background-color: rgb(64, 26, 130);
 }
 
 .nav-link-ltr::before {
@@ -120,3 +129,132 @@ body {
   width: 100%;
 }
 /* finish nav bar links animation*/
+/*take action*/
+
+section.get-started {
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  padding: 250px 0;
+  background-image: url("https://images.hdqwalls.com/download/bloodshot-movie-5k-2020-b3-2048x1152.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(80%);
+}
+
+section.get-started .get-started-content {
+  position: relative;
+  z-index: 1;
+}
+
+section.get-started .get-started-content h2 {
+  font-size: 90px;
+  max-width: 700px;
+  margin-top: 0;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+.browsing-button {
+  padding: 15px 20px 15px;
+  border-radius: 25px;
+  background: rgb(64, 26, 130);
+  background: linear-gradient(90deg, rgba(64, 26, 130, 1) 0%, rgba(201, 0, 135, 1) 100%);
+  font-family: 'Roboto', sans-serif;
+  color: #d8d8d8;
+  font-size: 17px;
+}
+
+.browsing-button:hover {
+  text-decoration: none;
+  background: rgb(64, 26, 130);
+  background: linear-gradient(90deg, rgba(201, 0, 135, 1) 0%, rgba(64, 26, 130, 1) 100%);
+  color: #d8d8d8;
+}
+/*section download*/
+.twenty{ 
+  width:5rem;
+}
+.store-download {
+  background: rgb(64, 26, 130);
+  background: linear-gradient(90deg, rgba(64, 26, 130, 1) 0%, rgba(201, 0, 135, 1) 100%);
+}
+
+section.download {
+  position: relative;
+  padding: 150px 0;
+}
+
+section.download h2 {
+  font-family: 'Roboto', sans-serif;
+  color: #d8d8d8;
+  font-weight: 600;
+  font-size: 70px;
+  margin-top: 0;
+}
+
+section.download p {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 10px;
+  color: #d8d8d8;
+}
+
+section.download .badges .badge-link {
+  display: block;
+  margin-bottom: 25px;
+}
+
+  
+section.download .badges .badge-link:last-child {
+  margin-bottom: 0;
+}
+
+section.download .badges .badge-link img {
+  height: 40px;
+}
+/* finish section download*/
+
+/*footer*/
+.footer-fb:hover {
+  color: #3B5998 !important;
+  border: none !important;
+}
+
+.footer-tw:hover {
+  color: #08a0e9 !important;
+  border: none !important;
+}
+
+.footer-in:hover {
+  color: #DD2A7B !important;
+  border: none !important;
+}
+
+footer.footer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.footer a {
+  font-family: 'Roboto', sans-serif;
+  color: #fff
+}
+
+.footer p {
+  color: #d6d6d6;
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer a:hover {
+  color: #fff;
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(to right, #ebb431 0%, #c90087 100%);
+  border-image-slice: 1;
+  text-decoration: none;
+}
+
+.footer {
+  background: rgb(64, 26, 130);
+  background: linear-gradient(90deg, rgba(64, 26, 130, 1) 0%, rgba(201, 0, 135, 1) 100%);
+  color: transparent;
+}

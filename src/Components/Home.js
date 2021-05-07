@@ -1,7 +1,10 @@
 import Movielist from './Film';
 import Navigation from './Navbar';
 import Foot  from './Footer';
-import Car from './Carousell'
+import Car from './Carousell';
+import Spons from './Sponsors';
+import Ticket from './Tickets';
+import Action from './Takeaction';
 
 
 function Hom() {
@@ -14,9 +17,10 @@ function Hom() {
      <div className="d-flex flex-wrap justify-content-around mt-5"> 
      <Movielist/>
     </div>
-    <div className= "background"><h3>test background parallax</h3></div>
+    <Action/>
+    <Ticket/>
+     <Spons/>
      <Foot/>
-     
         </div>
     )
 }

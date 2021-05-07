@@ -25,7 +25,7 @@ function Movielist () {
   <Card.Body>
     <Card.Title>{el.name}</Card.Title>
     <Card.Text>{el.category}</Card.Text>
-    <Card.Text>{el.imdbRating}<img className="star" alt="star" src="https://cdn3.iconfinder.com/data/icons/flat-actions-icons-9/792/Star_Gold_Dark-512.png" /></Card.Text>
+    <Card.Text>{el.imdbRating}<img className="star" alt="star" src="https://i.pinimg.com/originals/03/2f/ce/032fce11a0fb8e87c65b3369a6443674.png" /></Card.Text>
     <Button className="boutton" variant="">Watch now</Button>
   </Card.Body>
 </Card>
