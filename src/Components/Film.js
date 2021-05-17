@@ -22,7 +22,9 @@ function Movielist () {
 
 <Card className="carte my-3" style={{ width: '14rem' }}>
   <Card.Img variant="top" src={el.Images} style={{height:'350px'}}  />
-  <Card.Body>
+  <Card.Body className="corps">
+  <i class="fas fa-play play_button" data-toggle="tooltip" data-placement="bottom" title="Play Trailer">
+		  	</i>
     <Card.Title>{el.name}</Card.Title>
     <Card.Text>{el.category}</Card.Text>
     <Card.Text>{el.imdbRating}<img className="star" alt="star" src="https://i.pinimg.com/originals/03/2f/ce/032fce11a0fb8e87c65b3369a6443674.png" /></Card.Text>

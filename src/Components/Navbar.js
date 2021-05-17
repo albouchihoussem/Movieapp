@@ -1,9 +1,10 @@
+import {React }from 'react';
 import{Navbar,Form,Nav} from "react-bootstrap";
 import {Link} from 'react-router-dom';
 
 
 
-function Navigation(){
+function Navigation({}){
     return (
 <div>
 <Navbar className="nav" bg="light" expand="lg"  collapseOnSelect fixed="top" >
@@ -23,9 +24,9 @@ function Navigation(){
     <Link to="/" className="navlink nav-link-ltr"> Home</Link>
       <Link to="/about" className="navlink nav-link-ltr">About us</Link>
       <Link to="/contact" className="navlink nav-link-ltr">Contact</Link>
-     
     </Nav>
-    <Form action="" className="mr-4">
+    
+    <Form className="mr-4">
   <input className="put" type="search" placeholder="Search"/> 
   <i  className="fas fa-search"></i>
 
