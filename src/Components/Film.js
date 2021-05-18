@@ -2,7 +2,7 @@ import React, {useState,useEffect}from 'react';
 import {Card,Button } from 'react-bootstrap';
 
 
-function Movielist () {
+function Movielist ({input}) {
   const [movie, setMovie] = useState([])
   const getMovie = ()=>{
     
@@ -17,11 +17,11 @@ function Movielist () {
   console.log(movie)
   return(
     
-      movie.map(el=>
+      movie.filter(el=>el.name.toLowerCase().includes(input.toLowerCase())).map(el=>
       <div>
 
 <Card className="carte my-3" style={{ width: '14rem' }}>
-  <Card.Img variant="top" src={el.Images} style={{height:'350px'}}  />
+  <Card.Img variant="top" src={el.Images} style={{height:'250px'}}  />
   <Card.Body className="corps">
   <i class="fas fa-play play_button" data-toggle="tooltip" data-placement="bottom" title="Play Trailer">
 		  	</i>
@@ -35,9 +35,9 @@ function Movielist () {
       )
   
    )
-
+  
  }
-
+  
 export default Movielist;
 
 

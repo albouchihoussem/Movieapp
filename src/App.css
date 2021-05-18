@@ -54,7 +54,7 @@
   margin-left:-30px;
 }
 .fa-heart{
-  color: black;
+  color: rgb(255, 255, 255);
   margin-left: 1rem;
 }
 .rounded-circle{
@@ -75,14 +75,14 @@ color: #ffffff;
 }
 .navbar-light{
   background: #ffe54f;
-  background: linear-gradient(90deg, #ddcc80 0%, #f3b8b8 100%);
+  color:rgb(92, 86, 86) !important;
 }
 .navlink{
   font-size: 1rem;
   text-transform: uppercase;
   padding-right: 1.4rem;
   text-decoration: none!important; 
-  color:black !important;
+  color:black !important;      /**/
 }
 body {
   background: rgb(204, 49, 49);
