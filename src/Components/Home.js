@@ -13,7 +13,7 @@ function Hom() {
 const [input , setInput] = useState ("")
 const getInput = (e)=> {
 setInput(e.target.value) 
-console.log('myinput',input)
+//console.log('myinput',input)
 }
     return (
         <div>

@@ -1,11 +1,21 @@
+import Navigation from './Navbar';
+import Foot  from './Footer';
+import Movielist from './Film';
+import { useState } from 'react';
 
 
-
-const Favoris =(props) => {
+function Favoris () {
+    const [input , setInput] = useState ("")
+const getInput = (e)=> {
+setInput(e.target.value) 
+}
    
         return (
             <div>
-            <h2>Ma liste de films favoris</h2>    
+           <Navigation getInput = {getInput} /> 
+            <h2>Ma liste de films favoris</h2>  
+            <Movielist input = {input} />
+            <Foot/>
             </div>
         )
 
