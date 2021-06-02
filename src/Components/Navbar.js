@@ -27,7 +27,7 @@ function Navigation({getInput}){
     </Nav>
     
     <Form className="mr-4">
-  <input className="put" type="search" placeholder="Search" onChange = {getInput} /> 
+  <input className="put" type="search" placeholder="Search" onChange ={getInput} /> 
   <i  className="fas fa-search"></i>
 
   <Link to="/favoris" className="iconav"> <i class="far fa-heart  mr-4" ></i> <span className="badge badge-danger rounded-circle">0</span></Link>

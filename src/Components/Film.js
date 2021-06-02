@@ -1,23 +1,22 @@
-import React, {useState,useEffect}from 'react';
+import React, {useState}from 'react';
 import {Card,Button } from 'react-bootstrap';
 
 
-function Movielist ({input}) {
-  const [movie, setMovie] = useState([])
-  const getMovie = ()=>{
-    
-    fetch('Movies.json').then(
-          response => response.json()).then 
-                   (Movies => setMovie(Movies));
-  }
-  
-  useEffect(()=> {getMovie()
-  },[])
 
-  console.log(movie)
+function Movielist ({movie}) {
+  
+
+  const [input , setInput] = useState ("")
+  const getInput = (e)=> {
+  setInput(e.target.value) 
+  //console.log('myinput',input)
+  }
+
   return(
     
-      movie.filter(el=>el.name.toLowerCase().includes(input.toLowerCase())).map(el=>
+      movie.filter(element=> {
+        if (input === "")
+        {return element} else if(element.name.toLowerCase().includes(input.toLowerCase()) ){return element} }).map(el=>
       <div>
 
 <Card className="carte my-3" style={{ width: '14rem' }}>
