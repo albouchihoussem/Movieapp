@@ -1,7 +1,8 @@
 import React from 'react'
 import {useState} from 'react';
 import axios from 'axios';
-import {Button,Table,Modal } from 'react-bootstrap';
+import {button,Table} from 'react-bootstrap';
+import Update from './Modal';
 
 
 
@@ -17,7 +18,9 @@ function Movies({movie, input}) {
         
         }
     );
-
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
 
     // const handleChange = e => { 
     //     const {name, value}=e.target
@@ -42,21 +45,6 @@ const handleremove = (id) => {
       console.log(res)
  }).catch((error)=>console.log(error));
 }
-//Update function///////////////////
-function handleupdate (id) {
-  console.log (id)
-}
-
-
-
-
-
-
-//modal
-const [show, setShow] = useState(false);
-const handleClose = () => setShow(false);
-const handleShow = () => setShow(true);
-//modal
 
 
     return (
@@ -64,7 +52,7 @@ const handleShow = () => setShow(true);
         <h1>dashboard</h1>
         <h2>Add new movies/series</h2>
         <form onSubmit={handleSubmit} >
-                <input value={input1.images}  onChange= { (e) => setInput1 ({...input1, images: e.target.value}) } type='text' name='images' placeholder='enter image link' /><br/>
+                <input value={input1.Images}  onChange= { (e) => setInput1 ({...input1, Images: e.target.value}) } type='text' name='images' placeholder='enter image link' /><br/>
                 <input value={input1.name} onChange= { (e) => setInput1 ({...input1, name: e.target.value}) } type='text' name='name' placeholder='enter movie/serie title' /> <br/>
                 <input value={input1.category}  onChange= { (e) => setInput1 ({...input1, category: e.target.value}) } type='text' name='category' placeholder='enter movie/serie category' /><br/>
                 <input value={input1.imdbRating}  onChange= { (e) => setInput1 ({...input1, imdbRating: e.target.value}) }  type='text' name='imdbRating' placeholder='enter movie/serie rating' /><br/>
@@ -95,9 +83,9 @@ const handleShow = () => setShow(true);
       <td>{el.name}  </td>
       <td>{el.category}</td>
       <td>{el.imdbRating}</td>
+      <Update el={el} handleSubmit={handleSubmit}/>
       <td>
           <span>  
-          <button  onClick={handleShow}  /*onClick={()=> handleupdate(el.id)}*/   >Edit</button> 
           <button type="remove" form="form1" value="Remove" onClick={(e)=> handleremove(el.id,)}>Delete</button>
           </span>
       </td>
@@ -123,26 +111,11 @@ const handleShow = () => setShow(true);
               <input defaultValue={movieprps.imdbRating}  onChange= { (e) => setInput1 ({...input1, imdbRating: e.target.value}) }  type='text' name='imdbRating' placeholder='enter the movie rating' /><br/>
 */}
 
-<Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
-          <Modal.Title>Update your movies/series list</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>       
 
-          <form onSubmit={handleSubmit} >
-              <h3>hello</h3>
 
-   {/* <button type="remove" form="form1" value="Remove" onClick={handleremove}>Delete</button> */}
-   </form></Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Save Changes
-          </Button>
-        </Modal.Footer>
-      </Modal>
+
+
+
 
        </>
 )}
