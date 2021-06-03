@@ -9,14 +9,12 @@ function Movielist ({movie}) {
   const [input , setInput] = useState ("")
   const getInput = (e)=> {
   setInput(e.target.value) 
-  //console.log('myinput',input)
+
   }
 
   return(
     
-      movie.filter(element=> {
-        if (input === "")
-        {return element} else if(element.name.toLowerCase().includes(input.toLowerCase()) ){return element} }).map(el=>
+      movie.map(el=>
       <div>
 
 <Card className="carte my-3" style={{ width: '14rem' }}>

@@ -16,7 +16,7 @@ function Hom({movie}) {
     const [input , setInput] = useState ("")
     const getInput = (e)=> {
     setInput(e.target.value) 
-    //console.log('myinput',input)
+ 
 }
     return (
         <div>

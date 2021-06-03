@@ -2,11 +2,11 @@ function Action(){
     return (
 
 <div className= "background">
-<section class="get-started">
-<div class="get-started-content">
-    <div class="container">
+<section className="get-started">
+<div className="get-started-content">
+    <div className="container">
         <h2>You done browsing?<br/>Start watching!</h2>
-        <a href="#contact" class="browsing-button">Let's Get Started!</a>
+        <a href="#contact" className="browsing-button">Let's Get Started!</a>
     </div>
 </div>
 <div class="overlay"></div>
