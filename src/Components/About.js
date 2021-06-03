@@ -5,17 +5,15 @@ import { useState } from 'react';
 
 
 
-function About(){
-    const [input , setInput] = useState ("")
-const getInput = (e)=> {
-setInput(e.target.value) 
-}
+function About({getInput,input}){
+
+
    
         return (
             <div>
            <Navigation getInput = {getInput} /> 
             <h2>Ma liste de films favoris</h2>  
-            <Movielist input = {input} />
+            {/* <Movielist input = {input} /> */}
             <Foot/>
             </div>
         )

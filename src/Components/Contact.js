@@ -4,17 +4,21 @@ import Foot  from './Footer';
 import Movielist from './Film';
 import { useState } from 'react';
 
-function Contact (){
+function Contact ({getInput}){
    
-        const [input , setInput] = useState ("")
-        const getInput = (e)=> {
-        setInput(e.target.value) 
-        }
-           
+       
                 return (
                     <div>
                    <Navigation getInput = {getInput} /> 
-                   <Movielist input = {input} />
+{/* *******************************start***************** */}
+  
+
+  
+
+
+{/* *******************************END***************** */}
+
+                   {/* <Movielist input = {input} /> */}
                     <Foot/>
                     </div>
                 )
