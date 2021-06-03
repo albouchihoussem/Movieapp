@@ -28,10 +28,11 @@ function App() {
   console.log(movie)
 
   const [input , setInput] = useState ("")
+
   const getInput = (e)=> {
   setInput(e.target.value) 
- 
-
+ e.preventDefault()
+console.log(`inpiuuuuuuuuuut`, input)
   }
 
   return (

@@ -3,20 +3,17 @@ import {Card,Button } from 'react-bootstrap';
 
 
 
-function Movielist ({movie}) {
+function Movielist ({movie,input}) {
   
 
-  const [input , setInput] = useState ("")
-  const getInput = (e)=> {
-  setInput(e.target.value) 
-
-  }
-
+  console.log("gahkdlyyyyyyyyyyyz",movie)
   return(
-    
-      movie.map(el=>
+ 
+    movie.filter(el=> el.name.toLowerCase().includes(input.toLowerCase()) )
+    .map(el=>
       <div>
-
+  { console.log(movie.name)}
+    
 <Card className="carte my-3" style={{ width: '14rem' }}>
   <Card.Img variant="top" src={el.Images} style={{height:'250px'}}  />
   <Card.Body className="corps">

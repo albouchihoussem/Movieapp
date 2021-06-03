@@ -4,17 +4,14 @@ import Movielist from './Film';
 import { useState } from 'react';
 
 
-function Favoris () {
-    const [input , setInput] = useState ("")
-const getInput = (e)=> {
-setInput(e.target.value) 
-}
+function Favoris ({getInput,input}){
    
         return (
             <div>
            <Navigation getInput = {getInput} /> 
+
             <h2>Ma liste de films favoris</h2>  
-            <Movielist input = {input} />
+        {/* <Movielist input = {input} /> */}
             <Foot/>
             </div>
         )

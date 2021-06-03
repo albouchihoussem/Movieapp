@@ -10,17 +10,12 @@ import React, {useState}from 'react';
 
 
 
-function Hom({movie}) {
+function Hom({movie,input,getInput}) {
 
 
-    const [input , setInput] = useState ("")
-    const getInput = (e)=> {
-    setInput(e.target.value) 
- 
-}
     return (
         <div>
-    <Navigation getInput = {getInput} />
+    <Navigation input={input} getInput = {getInput} />
     <Car/>
     <Browser/>
     <h1 className="text-center my-5">Our movies </h1>
