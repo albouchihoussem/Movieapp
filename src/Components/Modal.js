@@ -53,9 +53,13 @@ const handleUpdate = async (id) => {
       
               
           <form>
+                <h5 id="titlemodal">Image link</h5>
                 <input defaultValue={el.Images}  onChange= { HandelCHange} type='text' name='Images' placeholder='enter image link' /><br/>
+                <h5 id="titlemodal">Title</h5>
                 <input defaultValue={el.name} onChange= { HandelCHange} type='text' name='name' placeholder='enter movie/serie title' /> <br/>
+                <h5 id="titlemodal">Category</h5>
                 <input defaultValue={el.category} onChange= { HandelCHange}type='text' name='category' placeholder='enter movie/serie category' /><br/>
+                <h5 id="titlemodal">Rating</h5>
                 <input defaultValue={el.imdbRating}  onChange= { HandelCHange} type='text' name='imdbRating' placeholder='enter movie/serie rating' /><br/>
 
 

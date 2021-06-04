@@ -141,12 +141,13 @@ section.get-started {
   position: relative;
   font-family: 'Roboto', sans-serif;
   padding: 250px 0;
-  background-image: url("https://images.hdqwalls.com/download/bloodshot-movie-5k-2020-b3-2048x1152.jpg");
+  background-image: url("https://www.pixel4k.com/wp-content/uploads/2018/12/shazam-hd-movie-4k_1544286096.jpg");
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   filter: brightness(80%);
+  min-height: 50vh;
 }
 
 section.get-started .get-started-content {
@@ -356,7 +357,10 @@ input{
 }
 #tblcenter {
   padding-top: 7rem;
+
 }
+
+
 
 /*edit/delete buttons*/
 #editbutton {
@@ -390,4 +394,13 @@ input{
   color: #070000;
 font-weight: 600;
   text-shadow: 2px 2px 5px rgb(121, 138, 138);
+}
+/*Title modal*/
+#titlemodal{
+  font-family: 'Roboto', sans-serif; 
+  font-weight: 600;
+  margin-top: 10px;
+}
+#marge{
+  margin-bottom: 4rem;
 }

@@ -11,7 +11,7 @@ function Movielist ({movie,input}) {
  
     movie.filter(el=> el.name.toLowerCase().includes(input.toLowerCase()) )
     .map(el=>
-      <div>
+      <div id="marge">
   { console.log(movie.name)}
     
 <Card className="carte my-3" style={{ width: '14rem' }}>
