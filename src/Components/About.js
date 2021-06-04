@@ -1,11 +1,10 @@
 import Navigation from './Navbar';
 import Foot  from './Footer';
-import Movielist from './Film';
-import { useState } from 'react';
 
 
 
-function About({getInput,input}){
+
+function About({getInput}){
 
 
    

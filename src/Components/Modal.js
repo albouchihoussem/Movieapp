@@ -6,7 +6,7 @@ import '../App.css';;
 
 
 
-function Update({el,handleSubmit}) {
+function Update({el}) {
   //modal
 const [show, setShow] = useState(false);
 const handleClose = () => setShow(false);
@@ -71,7 +71,7 @@ const handleUpdate = async (id) => {
 
 
 
-      <button  onClick={handleShow} className="editbutton"  >Edit</button> 
+      <button  onClick={handleShow} id="editbutton"  >Edit</button> 
 
       </div>
      )

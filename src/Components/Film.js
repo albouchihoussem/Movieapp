@@ -6,7 +6,7 @@ import {Card,Button } from 'react-bootstrap';
 function Movielist ({movie,input}) {
   
 
-  console.log("gahkdlyyyyyyyyyyyz",movie)
+  console.log("Test",movie)
   return(
  
     movie.filter(el=> el.name.toLowerCase().includes(input.toLowerCase()) )

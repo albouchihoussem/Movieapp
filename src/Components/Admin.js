@@ -1,7 +1,7 @@
 import React from 'react'
 import {useState} from 'react';
 import axios from 'axios';
-import {Table} from 'react-bootstrap';
+import {Table,Form} from 'react-bootstrap';
 import Update from './Modal';
 import '../App.css';;
 
@@ -9,7 +9,7 @@ import '../App.css';;
 
 
 
-function Movies({movie, input}) {
+function Movies({movie, input,getInput}) {
     const [input1, setInput1]=useState(
         {
             Images:"",
@@ -54,21 +54,24 @@ const HandeleCHange=(e)=>{
 
 
 return (
-        <div className="store-download " >
-        <h1 className="Title" >Dashboard</h1>
+        <div className="dashback" >
+  <h1 className="Title" >Welcome to the dashboard</h1>
        
         <h2 className="Titledsh">Add new movies/series</h2>
-        <form onSubmit={handleSubmit} >
-                <input value={input1.Images}  onChange= { HandeleCHange } type='text' name='Images' placeholder='enter image link' /><br/>
-                <input value={input1.name} onChange= { HandeleCHange }  type='text' name='name' placeholder='enter movie/serie title' /> <br/>
-                <input value={input1.category}  onChange= { HandeleCHange }  type='text' name='category' placeholder='enter movie/serie category' /><br/>
-                <input value={input1.imdbRating} onChange= { HandeleCHange }  type='text' name='imdbRating' placeholder='enter movie/serie rating' /><br/>
 
-            <button type="submit" >Submit</button>
+
+   
+        <form onSubmit={handleSubmit} >
+                <input className="inputdash" value={input1.Images}  onChange= { HandeleCHange } type='text' name='Images' placeholder='Enter image link' /><br/>
+                <input className="inputdash" value={input1.name} onChange= { HandeleCHange }  type='text' name='name' placeholder='Enter movie/serie title' /> <br/>
+                <input className="inputdash" value={input1.category}  onChange= { HandeleCHange }  type='text' name='category' placeholder='Enter movie/serie category' /><br/>
+                <input className="inputdash" value={input1.imdbRating} onChange= { HandeleCHange }  type='text' name='imdbRating' placeholder='Enter movie/serie rating' /><br/>
+
+            <button className="editbutton" type="submit" >Submit</button>
    </form>
 
            
-            <Table striped bordered hover variant="dark" size="sm">
+            <Table striped bordered hover variant="dark" size="sm" ClassName="space">
   <thead>
     <tr>
       <th style={{width:'39px'}} >#</th>
@@ -79,20 +82,20 @@ return (
       <th style={{width:'10x'}}>Edit/delete</th>
     </tr>
   </thead>
-  </Table>
+  </Table  >
   {movie.map(el=> 
    <Table striped bordered hover variant="dark" size="sm">
   <tbody>
     <tr>
-      <td> { el.id} </td>
+      <td id="tblcenter" > { el.id} </td>
       <td> <img src={el.Images} alt="poster" style={{height:'250px'}} /> </td>
-      <td>{el.name}  </td>
-      <td>{el.category}</td>
-      <td>{el.imdbRating}</td>
+      <td id="tblcenter">{el.name}  </td>
+      <td id="tblcenter">{el.category}</td>
+      <td id="tblcenter">{el.imdbRating}</td>
       <Update movie={movie} el={el} handleSubmit={handleSubmit}/>
       <td>
           <span>  
-          <button className="editbutton" type="remove" form="form1" value="Remove" onClick={(e)=> handleremove(el.id,)}  >Delete</button>
+          <button id="editbutton" type="remove" form="form1" value="Remove" onClick={(e)=> handleremove(el.id,)}  >Delete</button>
           </span>
       </td>
     </tr>
