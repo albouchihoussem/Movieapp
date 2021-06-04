@@ -34,6 +34,9 @@ const handleUpdate = async (id) => {
           .then(response => {console.log('Status:' , response.status)
                              console.log('Data : ', response.data)
                              setinput2(response.data)})
+
+                             .then(response=> window.location.reload())
+
           .catch(error => console.error('something went wrong', error)
           )}
 ///////////////////////////////////////
@@ -41,7 +44,7 @@ const handleUpdate = async (id) => {
 
           return(  
             <div>
-<Modal show={show} onHide={handleClose}>
+     <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Update your movies/series list</Modal.Title>
         </Modal.Header>
@@ -55,18 +58,13 @@ const handleUpdate = async (id) => {
                 <input defaultValue={el.category} onChange= { HandelCHange}type='text' name='category' placeholder='enter movie/serie category' /><br/>
                 <input defaultValue={el.imdbRating}  onChange= { HandelCHange} type='text' name='imdbRating' placeholder='enter movie/serie rating' /><br/>
 
-                <div className='submitButton'>
-                        <button onClick={()=>handleUpdate(el.id)}  > Update</button>
-                        </div>
 
 
    </form></Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Save Changes
+       
+          <Button  className='submitButton'  onClick={()=>handleUpdate(el.id)}  >
+          Update
           </Button>
         </Modal.Footer>
       </Modal>

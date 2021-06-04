@@ -2,13 +2,10 @@
   "posts": [
     {
       "id": 1,
+      "Images": "https://images-na.ssl-images-amazon.com/images/I/91hVXDVuraL._AC_SL1500_.jpg",
       "name": "John Wick Chapter 3",
-      "year": 2017,
-      "runtime": 106,
       "category": "Action",
-      "imdbRating": "5",
-      "release-date": "2019-06-26",
-      "Images": "https://images-na.ssl-images-amazon.com/images/I/91hVXDVuraL._AC_SL1500_.jpg"
+      "imdbRating": "4.75"
     },
     {
       "id": 2,

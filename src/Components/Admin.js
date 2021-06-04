@@ -52,10 +52,12 @@ const HandeleCHange=(e)=>{
  );
 }
 
-    return (
+
+return (
         <div className="store-download " >
-        <h1 >dashboard</h1>
-        <h2>Add new movies/series</h2>
+        <h1 className="Title" >Dashboard</h1>
+       
+        <h2 className="Titledsh">Add new movies/series</h2>
         <form onSubmit={handleSubmit} >
                 <input value={input1.Images}  onChange= { HandeleCHange } type='text' name='Images' placeholder='enter image link' /><br/>
                 <input value={input1.name} onChange= { HandeleCHange }  type='text' name='name' placeholder='enter movie/serie title' /> <br/>

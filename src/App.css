@@ -82,7 +82,7 @@ color: #ffffff;
   text-transform: uppercase;
   padding-right: 1.4rem;
   text-decoration: none!important; 
-  color:black !important;      /**/
+  color:rgb(255, 255, 255) !important;      /**/
 }
 body {
   background: rgb(204, 49, 49);
@@ -306,3 +306,11 @@ footer.footer {
   background: linear-gradient(90deg, rgba(201, 0, 135, 1) 0%, rgba(64, 26, 130, 1) 100%);
   color: #d8d8d8;
 }
+/*Dashboard style*/
+.Title {
+  color: #d8d8d8;
+  padding-top: 3rem;
+  font-weight: bold;
+}
+
+/**/
