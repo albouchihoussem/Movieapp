@@ -32,13 +32,17 @@ function Movies({movie, input}) {
         axios.post(`http://localhost:3008/posts`, input1).then((res) => {
           console.log(res)
 
-        }); 
+        })
+        .then(response=> window.location.reload())
+
 }
 //Remove function///////////////////
 const handleremove = (id) => {
      axios.delete(`http://localhost:3008/posts/${id}` ).then((res) => {
       console.log(res)
- }).catch((error)=>console.log(error));
+ })
+ .then(response=> window.location.reload())
+ .catch((error)=>console.log(error));
 }
 const HandeleCHange=(e)=>{
   const {name,value}=e.target
