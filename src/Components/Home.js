@@ -18,7 +18,7 @@ function Hom({movie,input,getInput}) {
     <Navigation input={input} getInput = {getInput} />
     <Car/>
     <Browser/>
-    <h1 className="text-center my-5">Our movies </h1>
+    <h1 className=" ourmovies text-center my-5">Our movies </h1>
      <div className="d-flex flex-wrap justify-content-around mt-5"> 
      <Movielist input = {input} movie={movie} />
     </div>

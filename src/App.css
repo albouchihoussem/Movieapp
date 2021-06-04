@@ -66,6 +66,7 @@ font-size: 30px;
 font-weight:bold;
 margin-left: 1rem;
 color: #ffffff;
+font-family: 'Permanent Marker', cursive;
 }
 .logo{
   margin-left: 3rem;
@@ -196,6 +197,7 @@ section.download h2 {
   font-weight: 600;
   font-size: 70px;
   margin-top: 0;
+ 
 }
 
 section.download p {
@@ -370,4 +372,22 @@ input{
   margin: 0 auto;
   vertical-align: middle;
   margin-top: 6.2rem;
+}
+/*take action title*/
+#titleaction{
+ margin-left: 17%;
+ color: white;
+ text-shadow:
+  -1px -1px 0 #000,  
+   1px -1px 0 #000,
+   -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+/*ourmovies*/
+.ourmovies{
+  font-family: 'Roboto', sans-serif;
+  color: #070000;
+font-weight: 600;
+  text-shadow: 2px 2px 5px rgb(121, 138, 138);
 }

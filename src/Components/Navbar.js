@@ -12,7 +12,7 @@ function Navigation({getInput,input}){
   <Navbar.Brand href="#home">
  <div className="d-flex align-items-center"> <img
         src="Images/movielogo.png" color="#FF5A5F"
-        width="90" 
+        width="110" 
       
         className="logo"
         alt="Movietime"
