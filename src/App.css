@@ -36,13 +36,21 @@
     transform: rotate(360deg);
   }
 }
+.btn:focus {
+  
+  box-shadow:none !important;
+}
 
+.boutton{
+  color: #FFC42E !important;
+  background-color:rgb(255, 255, 255) !important;
+  border:solid gold !important;
+  border-radius: 15px !important;
+}
 .boutton:hover{
-  color: #FFC42E;
-  background-color:rgb(255, 255, 255);
-  border:solid gold;
-  border-radius: 15px;
-
+  background-color: gold !important ;
+  color: #ffffff !important;
+  font-weight: bold !important;
 }
 /*star*/
 .star{
@@ -90,8 +98,29 @@ body {
 }
 /*input border radius*/
 .put{
-  border-radius: 50px;
+
   outline: none;
+
+
+  font-family: var(--font);
+  font-weight: 300;
+  font-size: 14px;
+  height: 37px;
+  width: 60%;
+  background: transparent;
+  color: var(--white);
+  appearance: none;
+  border: 0;
+  border: 2px solid rgba(245, 245, 241, .1);
+ border-radius: 37px;
+  padding: 0 10px;
+  pointer-events: all;
+  transition: border .25s ease, width .125s ease .125s;
+}
+.put:focus {
+  border: 2px solid var(--yellow);
+  width: 65%;
+  background: white;
 }
 /*nav bar links animation*/
 h1 {
@@ -123,7 +152,7 @@ h1 {
   height: 5px;
   content: "";
   position: absolute;
-  background-color: rgb(64, 26, 130);
+  background-color: #f9a331;
 }
 
 .nav-link-ltr::before {
@@ -268,6 +297,29 @@ footer.footer {
 }
 
 /*cards */
+.carte {
+  border-radius: .15em;
+  box-shadow: 0em 0em 1em rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+ width: 14rem;
+
+}
+#carteimage{
+ width: 100%;
+    display: block;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    
+    opacity: 0.9;
+}
+#carteimage:hover{
+  -webkit-transform: scale(0.92);
+  transform: scale(0.92);
+  opacity: 1;
+}
+
+/********************testy*****************************/
+
 .play_button{
   background-color: #ff3d49;
   position: absolute;

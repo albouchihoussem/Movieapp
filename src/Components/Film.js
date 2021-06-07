@@ -14,8 +14,8 @@ function Movielist ({movie,input}) {
       <div id="marge">
   { console.log(movie.name)}
     
-<Card className="carte my-3" style={{ width: '14rem' }}>
-  <Card.Img variant="top" src={el.Images} style={{height:'250px'}}  />
+<Card className="carte my-3" >
+  <Card.Img id="carteimage" variant="top" src={el.Images} style={{height:'250px'}}  />
   <Card.Body className="corps">
   <i class="fas fa-play play_button" data-toggle="tooltip" data-placement="bottom" title="Play Trailer">
 		  	</i>
